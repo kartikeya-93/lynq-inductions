@@ -8,7 +8,7 @@ def extract_city(question: str) -> str:
     return words[-2] if len(words) > 1 else None  # naive extraction, e.g. "Hyderabad"
 
 async def main():
-    user_question = "Is it raining in Hyderabad today?"
+    user_question = "hows the weather in hyderabad today?"
 
     city = extract_city(user_question)
     if not city:
